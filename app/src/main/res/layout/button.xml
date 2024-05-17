@@ -6,38 +6,245 @@
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:columnCount="4"
         android:rowCount="5">
 
-            <Button
-                android:id="@+id/bt5"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:background="#6C2CDD"
-                android:text="5"
-                android:textColor="@color/white"
-                android:textSize="40dp"
-                app:cornerRadius="0dp"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_row="1">
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            >
 
-            </Button>
-            <Button
-                android:id="@+id/bt6"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:background="#6C2CDD"
-                android:text="6"
-                android:textColor="@color/white"
-                android:textSize="40dp"
-                app:cornerRadius="0dp"
-                android:layout_column="2"
-                android:layout_columnWeight="1"
-                android:layout_row="1">
+        </Button>
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0">
 
-            </Button>
+        </Button>
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="0">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btCong"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="#3A3A39"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="1">
+
+        </Button>
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1">
+
+        </Button>
+        <Button
+            android:id="@+id/bt6"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#6C2CDD"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btTru"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="#3A3A39"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="#3A3A39"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btC"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt0"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btBang"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="#6C2CDD"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btChia"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="#3A3A39"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:cornerRadius="0dp">
+
+        </Button>
 
 
 
