@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4"
+        android:rowCount="5">
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="#6C2CDD"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                app:cornerRadius="0dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_row="1">
+
+            </Button>
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="#6C2CDD"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                app:cornerRadius="0dp"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_row="1">
+
+            </Button>
+
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
