@@ -9,20 +9,21 @@
 
 
     <include
+        android:id="@+id/inputArea"
         layout="@layout/input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </include>
+        android:layout_height="wrap_content"></include>
+
     <RelativeLayout
+        android:id="@+id/outputArea"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom">
+
         <include
             layout="@layout/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
         </include>
     </RelativeLayout>
