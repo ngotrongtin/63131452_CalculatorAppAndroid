@@ -4,14 +4,17 @@ import java.util.List;
 import java.util.ArrayList;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+//import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
     TextView inputArea;
+    private MyDatabaseManager dbManager;
 
     // functions that turn the inerFix to postFix
     private List<String> turnStringExpressionToList(String expression) {
@@ -137,6 +140,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbManager = new MyDatabaseManager(this);
+        dbManager.open();
+        dbManager.close();
     }
 
     // input onclick
@@ -176,7 +183,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // output onclick
+    // output onclick, caculating the expression and save to the database
+
     public void calculate(View view){
         inputArea = findViewById(R.id.input);
         TextView outputArea = findViewById(R.id.output);
@@ -185,6 +193,15 @@ public class MainActivity extends AppCompatActivity {
         List<String> posFix = infixToPostfix(innerFix);
         int result = evaluatePostfix(posFix);
         outputArea.setText(String.valueOf(result));
-    }
 
+        // save result to the database
+        dbManager.open();
+        dbManager.insertCalculation(inputString, (float)result);
+        dbManager.close();
+    }
+    // db switch onclick
+    public void switch_to_kq(View v){
+        Intent IManHinhKQ = new Intent(this, MainDBActivity.class);
+        startActivity(IManHinhKQ);
+    }
 }
